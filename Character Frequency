@@ -1,0 +1,11 @@
+var str = 'This is a string'
+
+const frequencyDistribution = (str) => {
+  const map = {};
+  for (let i = 0; i < str.length; i++) {
+    map[str[i]] = (map[str[i]] || 0) + 1;
+  }
+  return map;
+};
+console.log(frequencyDistribution(str) );
+
